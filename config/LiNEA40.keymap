@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -146,10 +146,10 @@
 
         MAC_WIN {
             bindings = <
-&kp LC(LS(TAB))  &kp LC(LS(TAB))  &kp LC(UP)        &kp SPACE      &kp LC(J)                            &kp LC(D)     &kp LC(LA(E))     &kp LA(F)  &kp LC(LA(T))      &kp LC(LA(G))
-&kp LC(LEFT)     &trans           &kp LS(LG(T))     &kp LC(RIGHT)  &trans                               &kp LC(K)     &kp LC(LA(LEFT))  &kp F11    &kp LC(LA(RIGHT))  &kp LA(ENTER)
-&trans           &kp LG(LEFT)     &kp LC(LS(DOWN))  &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMI)  &trans            &kp F19    &trans             &trans
-&trans           &trans           &trans            &trans         &trans             &trans    &trans  &trans                          &trans     &trans             &trans
+&kp LC(LS(TAB))  &kp LC(TAB)   &kp LC(UP)        &kp SPACE      &kp LC(J)                            &kp LC(D)     &kp LC(LA(E))     &kp LA(F)  &kp LC(LA(T))      &kp LC(LA(G))
+&kp LC(LEFT)     &trans        &kp LS(LG(T))     &kp LC(RIGHT)  &trans                               &kp LC(K)     &kp LC(LA(LEFT))  &kp F11    &kp LC(LA(RIGHT))  &kp LA(ENTER)
+&trans           &kp LG(LEFT)  &kp LC(LS(DOWN))  &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMI)  &trans            &kp F19    &trans             &trans
+&trans           &trans        &trans            &trans         &trans             &trans    &trans  &trans                          &trans     &trans             &trans
             >;
         };
 
