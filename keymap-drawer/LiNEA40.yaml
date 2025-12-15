@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHIFT}
+  - A
   - S
   - D
   - F
@@ -95,7 +95,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHIFT}
+  - A
   - S
   - D
   - F
@@ -179,7 +179,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHIFT}
+  - A
   - S
   - D
   - F
@@ -263,7 +263,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LSHIFT}
+  - A
   - S
   - D
   - F
@@ -465,3 +465,6 @@ layers:
 combos:
 - p: [11, 12]
   k: TAB
+- p: [10, 11]
+  k: LSHIFT
+  l: [MAC_BASE, WIN_BASE, AND_BASE, PAD_BASE]
