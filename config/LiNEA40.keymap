@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -69,46 +69,6 @@
         Tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
-        };
-
-        DeleteKey {
-            bindings = <&kp DEL>;
-            key-positions = <7 8>;
-        };
-
-        InsertKey {
-            bindings = <&kp INS>;
-            key-positions = <6 7>;
-        };
-
-        Jkey {
-            bindings = <&kp J>;
-            key-positions = <17 16>;
-        };
-
-        RightClick {
-            bindings = <&mkp MB2>;
-            key-positions = <18 17>;
-        };
-
-        PrevClick {
-            bindings = <&mkp MB4>;
-            key-positions = <27 28>;
-        };
-
-        ClickNext {
-            bindings = <&mkp MB5>;
-            key-positions = <26 27>;
-        };
-
-        MB3Cmb {
-            bindings = <&mkp MB3>;
-            key-positions = <19 18>;
-        };
-
-        ESCcmb {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 0>;
         };
     };
 
@@ -125,6 +85,40 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
+        };
+    };
+
+    macros {
+        bt_mac: bt_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "BT_MAC";
+        };
+
+        bt_win: bt_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BT_WIN";
+        };
+
+        bt_and: bt_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 4>;
+
+            label = "BT_AND";
+        };
+
+        bt_pad: bt_pad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 6>;
+
+            label = "BT_PAD";
         };
     };
 
@@ -233,13 +227,11 @@
 
         ADJUST {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                         &trans          &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans                               &trans          &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &bootloader  &studio_unlock          &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans       &trans  &trans
+&trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans       &trans  &trans
+&trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans       &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans          &bootloader  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
     };
 
