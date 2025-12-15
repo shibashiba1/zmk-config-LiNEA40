@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: LiNEA40}
 layers:
-  MAC_BASE:
+  Mac_Base:
   - Q
   - W
   - E
@@ -35,14 +35,14 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: LGUI}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SYMNUM}
-  - {t: SPACE, h: MAC_WIN}
+  - {t: LANG1, h: SymNum}
+  - {t: SPACE, h: Mac_Win}
   - BACKSPACE
-  - {t: ENTER, h: FUNC}
+  - {t: ENTER, h: Func}
   - '-'
   - _
   - ESC
-  MAC_WIN:
+  Mac_Win:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Ctl+UP
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  WIN_BASE:
+  Win_Base:
   - Q
   - W
   - E
@@ -119,14 +119,14 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: LCTRL}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SYMNUM}
-  - {t: SPACE, h: WIN_WIN}
+  - {t: LANG1, h: SymNum}
+  - {t: SPACE, h: Win_Win}
   - BACKSPACE
-  - {t: ENTER, h: FUNC}
+  - {t: ENTER, h: Func}
   - '-'
   - _
   - ESC
-  WIN_WIN:
+  Win_Win:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Gui+TAB
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  AND_BASE:
+  And_Base:
   - Q
   - W
   - E
@@ -203,10 +203,10 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: LCTRL}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SYMNUM}
+  - {t: LANG1, h: SymNum}
   - {t: SPACE, h: And_Win}
   - BACKSPACE
-  - {t: ENTER, h: FUNC}
+  - {t: ENTER, h: Func}
   - '-'
   - _
   - ESC
@@ -252,7 +252,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  PAD_BASE:
+  Pad_Base:
   - Q
   - W
   - E
@@ -287,10 +287,10 @@ layers:
   - LEFT ALT
   - {t: LANG2, h: LGUI}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SYMNUM}
+  - {t: LANG1, h: SymNum}
   - {t: SPACE, h: Pad_Win}
   - BACKSPACE
-  - {t: ENTER, h: FUNC}
+  - {t: ENTER, h: Func}
   - '-'
   - _
   - ESC
@@ -336,7 +336,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYMNUM:
+  SymNum:
   - Sft+;
   - Sft+'
   - Sft+`
@@ -378,7 +378,7 @@ layers:
   - '-'
   - _
   - '='
-  FUNC:
+  Func:
   - HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -420,7 +420,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  ADJUST:
+  Adjust:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -467,4 +467,4 @@ combos:
   k: TAB
 - p: [10, 11]
   k: LSHIFT
-  l: [MAC_BASE, WIN_BASE, AND_BASE, PAD_BASE]
+  l: [Mac_Base, Win_Base, And_Base, Pad_Base]
