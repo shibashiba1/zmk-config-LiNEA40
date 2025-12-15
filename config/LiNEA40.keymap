@@ -33,6 +33,10 @@
     acceleration-exponent = <0>;
 };
 
+&mt {
+    flavor = "balanced";
+};
+
 / {
     input_processors {
         zip_wheel_scaler: zip_wheel_scaler {
