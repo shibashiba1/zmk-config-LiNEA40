@@ -430,7 +430,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - '&bt_mac'
   - '&bt_win'
   - '&bt_and'
