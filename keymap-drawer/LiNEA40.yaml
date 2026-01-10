@@ -233,7 +233,7 @@ layers:
   - Gui+Ctl+UP
   - {t: ▽, type: trans}
   - Alt+LEFT
-  - {t: ▽, type: trans}
+  - F15
   - Alt+RIGHT
   - {t: ▽, type: trans}
   - Ctl+O
