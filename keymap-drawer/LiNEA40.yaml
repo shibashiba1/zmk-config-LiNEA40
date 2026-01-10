@@ -228,8 +228,8 @@ layers:
   - SPACE
   - Ctl+I
   - Gui+Ctl+LEFT
-  - Gui+H
-  - Gui+Ctl+A
+  - Gui+ENTER
+  - Gui+Ctl+RIGHT
   - Gui+Ctl+UP
   - {t: ▽, type: trans}
   - Alt+LEFT
@@ -238,7 +238,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+O
   - {t: ▽, type: trans}
-  - Gui+Ctl+DOWN
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
