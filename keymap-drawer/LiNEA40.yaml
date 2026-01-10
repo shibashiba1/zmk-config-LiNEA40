@@ -211,7 +211,7 @@ layers:
   - _
   - ESC
   And_Win:
-  - Ctl+F4
+  - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Gui+TAB
   - Ctl+TAB
