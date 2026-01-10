@@ -139,7 +139,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Gui+LEFT
-  - Sft+Ctl+A
+  - Ctl+Sft+T
   - Ctl+Gui+RIGHT
   - SPACE
   - F7
@@ -211,7 +211,7 @@ layers:
   - _
   - ESC
   And_Win:
-  - {t: ▽, type: trans}
+  - Ctl+F4
   - Ctl+Sft+TAB
   - Gui+TAB
   - Ctl+TAB
@@ -222,9 +222,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Gui+LEFT
-  - Sft+Ctl+A
-  - Ctl+Gui+RIGHT
+  - F13
+  - Sft+Ctl+T
+  - F14
   - SPACE
   - Ctl+I
   - Gui+Ctl+LEFT

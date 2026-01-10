@@ -758,7 +758,7 @@ path.combo {
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Sft+Ctl</tspan><tspan x="0" dy="1.2em">+A</tspan>
+<tspan x="0" dy="-0.6em">Ctl+Sft</tspan><tspan x="0" dy="1.2em">+T</tspan>
 </text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-13">
@@ -1079,9 +1079,9 @@ path.combo {
 <g transform="translate(30, 1400)" class="layer-And_Win">
 <text x="0" y="28" class="label" id="And_Win">And_Win:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 28)" class="key trans keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(28, 28)" class="key keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctl+F4</text>
 </g>
 <g transform="translate(84, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1127,21 +1127,17 @@ path.combo {
 </g>
 <g transform="translate(84, 84)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+Gui</tspan><tspan x="0" dy="1.2em">+LEFT</tspan>
-</text>
+<text x="0" y="0" class="key tap">F13</text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Sft+Ctl</tspan><tspan x="0" dy="1.2em">+A</tspan>
+<tspan x="0" dy="-0.6em">Sft+Ctl</tspan><tspan x="0" dy="1.2em">+T</tspan>
 </text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Ctl+Gui</tspan><tspan x="0" dy="1.2em">+RIGHT</tspan>
-</text>
+<text x="0" y="0" class="key tap">F14</text>
 </g>
 <g transform="translate(252, 84)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
