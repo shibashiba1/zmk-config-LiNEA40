@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -213,7 +213,7 @@
         Pad_Win {
             bindings = <
 &trans  &kp LC(LS(TAB))  &kp LC(UP)     &kp LC(TAB)    &kp LC(J)                            &kp LC(LA(D))  &kp LC(LA(E))     &kp LC(LA(F))  &kp LC(LA(T))      &kp LC(LA(G))
-&trans  &kp LC(LEFT)     &kp LS(LG(T))  &kp LC(RIGHT)  &kp SPACE                            &kp LC(K)      &kp LC(LA(LEFT))  &kp F11        &kp LC(LA(RIGHT))  &kp LC(LA(ENTER))
+&trans  &kp LC(LEFT)     &kp LS(LG(T))  &kp LC(RIGHT)  &kp SPACE                            &kp LC(K)      &kp LC(LA(LEFT))  &kp LG(H)      &kp LC(LA(RIGHT))  &kp LC(LA(ENTER))
 &trans  &kp LG(LEFT)     &kp LC(DOWN)   &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMI)   &trans            &kp F19        &trans             &trans
 &trans  &trans           &trans         &trans         &trans             &trans    &trans  &trans                           &trans         &trans             &trans
             >;
