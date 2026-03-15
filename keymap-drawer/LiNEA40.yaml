@@ -435,7 +435,7 @@ layers:
   - '&bt_win'
   - '&bt_and'
   - '&bt_pad'
-  - {t: ▽, type: trans}
+  - '&bt_win2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
