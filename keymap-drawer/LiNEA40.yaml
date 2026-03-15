@@ -312,7 +312,7 @@ layers:
   - SPACE
   - Ctl+K
   - Ctl+Alt+LEFT
-  - F11
+  - Gui+H
   - Ctl+Alt+RIGHT
   - Ctl+Alt+ENTER
   - {t: ▽, type: trans}
