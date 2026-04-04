@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -77,12 +77,12 @@
             layers = <0 2 4 6>;
         };
 
-        alt-L {
+        alt_L {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <32 31>;
         };
 
-        alt-R {
+        alt_R {
             bindings = <&kp RA(SPACE)>;
             key-positions = <38 39>;
         };
