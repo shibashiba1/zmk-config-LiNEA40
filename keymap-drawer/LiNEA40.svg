@@ -68,25 +68,25 @@ text.footer {
 }
 
 /* styling for combo tap, and key non-tap label text */
-text.combo, text.hold, text.shifted, text.left, text.right {
+text.combo, text.hold, text.shifted, text.left, text.right, text.tl, text.tr, text.bl, text.br {
     font-size: 11px;
 }
 
-text.hold {
+text.hold, text.bl, text.br {
     text-anchor: middle;
     dominant-baseline: auto;
 }
 
-text.shifted {
+text.shifted, text.tl, text.tr {
     text-anchor: middle;
     dominant-baseline: hanging;
 }
 
-text.left {
+text.left, text.tl, text.bl {
     text-anchor: start;
 }
 
-text.right {
+text.right, text.tr, text.br {
     text-anchor: end;
 }
 
@@ -308,6 +308,12 @@ path.combo {
 <rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
 <text x="56" y="84" class="combo tap">LSHIFT</text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-Mac_Win">
@@ -512,6 +518,12 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-Win_Base">
@@ -697,6 +709,12 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
 <text x="56" y="84" class="combo tap">LSHIFT</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -888,6 +906,12 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-And_Base">
@@ -1073,6 +1097,12 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
 <text x="56" y="84" class="combo tap">LSHIFT</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1262,6 +1292,12 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-Pad_Base">
@@ -1447,6 +1483,12 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="42" y="71" width="28" height="26" class="combo"/>
 <text x="56" y="84" class="combo tap">LSHIFT</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1652,6 +1694,12 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2240)" class="layer-SymNum">
@@ -1825,6 +1873,12 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2010,6 +2064,12 @@ path.combo {
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
 </g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2800)" class="layer-Adjust">
@@ -2187,6 +2247,12 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
 <text x="112" y="84" class="combo tap">TAB</text>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="183" width="28" height="26" class="combo"/>
+<text x="112" y="196" class="combo tap">
+<tspan x="112" dy="-0.6em">RIGHT</tspan><tspan x="112" dy="1.2em">ALT</tspan>
+</text>
 </g>
 </g>
 </g>

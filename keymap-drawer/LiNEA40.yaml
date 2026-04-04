@@ -468,3 +468,5 @@ combos:
 - p: [10, 11]
   k: LSHIFT
   l: [Mac_Base, Win_Base, And_Base, Pad_Base]
+- p: [32, 31]
+  k: RIGHT ALT
