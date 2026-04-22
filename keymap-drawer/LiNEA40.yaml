@@ -472,3 +472,5 @@ combos:
   k: RIGHT ALT
 - p: [38, 39]
   k: AltGr+SPACE
+- p: [40, 39]
+  k: Sft+SPACE
