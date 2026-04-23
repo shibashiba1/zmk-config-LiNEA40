@@ -474,3 +474,5 @@ combos:
   k: AltGr+SPACE
 - p: [40, 39]
   k: Sft+SPACE
+- p: [16, 18]
+  k: '&mkp MB3'
