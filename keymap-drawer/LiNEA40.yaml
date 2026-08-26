@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: LiNEA40}
 layers:
-  Mac_Base:
-  - Q
+  Mac:
+  - '&td_q'
   - W
   - E
   - R
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LSHFT}
   - S
   - D
   - F
@@ -21,28 +21,28 @@ layers:
   - K
   - L
   - RSHIFT
-  - Z
-  - X
-  - C
+  - {t: Z, h: LCTRL}
+  - {t: X, h: LGUI}
+  - {t: C, h: LALT}
   - V
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: LALT}
+  - {t: ., h: LGUI}
+  - {t: /, h: LCTRL}
   - LCTRL
   - LEFT ALT
   - {t: LANG2, h: LGUI}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SymNum}
-  - {t: SPACE, h: Mac_Win}
+  - {t: LANG1, h: Sym}
+  - {t: SPACE, h: MacNav}
   - BACKSPACE
-  - {t: ENTER, h: Func}
+  - {t: ENTER, h: Fn}
   - '-'
   - _
   - ESC
-  Mac_Win:
+  MacNav:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Ctl+UP
@@ -84,8 +84,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Win_Base:
-  - Q
+  Win:
+  - '&td_q'
   - W
   - E
   - R
@@ -95,7 +95,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LSHFT}
   - S
   - D
   - F
@@ -105,28 +105,28 @@ layers:
   - K
   - L
   - RSHIFT
-  - Z
-  - X
-  - C
+  - {t: Z, h: LGUI}
+  - {t: X, h: LCTRL}
+  - {t: C, h: LALT}
   - V
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: LALT}
+  - {t: ., h: LCTRL}
+  - {t: /, h: LGUI}
   - LGUI
   - LEFT ALT
   - {t: LANG2, h: LCTRL}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SymNum}
-  - {t: SPACE, h: Win_Win}
+  - {t: LANG1, h: Sym}
+  - {t: SPACE, h: WinNav}
   - BACKSPACE
-  - {t: ENTER, h: Func}
+  - {t: ENTER, h: Fn}
   - '-'
   - _
   - ESC
-  Win_Win:
+  WinNav:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Gui+TAB
@@ -168,8 +168,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  And_Base:
-  - Q
+  And:
+  - '&td_q'
   - W
   - E
   - R
@@ -179,7 +179,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LSHFT}
   - S
   - D
   - F
@@ -189,28 +189,28 @@ layers:
   - K
   - L
   - RSHIFT
-  - Z
-  - X
-  - C
+  - {t: Z, h: LGUI}
+  - {t: X, h: LCTRL}
+  - {t: C, h: LALT}
   - V
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: LALT}
+  - {t: ., h: LCTRL}
+  - {t: /, h: LGUI}
   - LGUI
   - LEFT ALT
   - {t: LANG2, h: LCTRL}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SymNum}
-  - {t: SPACE, h: And_Win}
+  - {t: LANG1, h: Sym}
+  - {t: SPACE, h: AndNav}
   - BACKSPACE
-  - {t: ENTER, h: Func}
+  - {t: ENTER, h: Fn}
   - '-'
   - _
   - ESC
-  And_Win:
+  AndNav:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Gui+TAB
@@ -252,8 +252,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Pad_Base:
-  - Q
+  Pad:
+  - '&td_q'
   - W
   - E
   - R
@@ -263,7 +263,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - {t: A, h: LSHFT}
   - S
   - D
   - F
@@ -273,28 +273,28 @@ layers:
   - K
   - L
   - RSHIFT
-  - Z
-  - X
-  - C
+  - {t: Z, h: LCTRL}
+  - {t: X, h: LGUI}
+  - {t: C, h: LALT}
   - V
   - B
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: LALT}
+  - {t: ., h: LGUI}
+  - {t: /, h: LCTRL}
   - LCTRL
   - LEFT ALT
   - {t: LANG2, h: LGUI}
   - {t: ▽, type: trans}
-  - {t: LANG1, h: SymNum}
-  - {t: SPACE, h: Pad_Win}
+  - {t: LANG1, h: Sym}
+  - {t: SPACE, h: PadNav}
   - BACKSPACE
-  - {t: ENTER, h: Func}
+  - {t: ENTER, h: Fn}
   - '-'
   - _
   - ESC
-  Pad_Win:
+  PadNav:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - Ctl+UP
@@ -336,7 +336,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SymNum:
+  Sym:
   - Sft+;
   - Sft+'
   - Sft+`
@@ -367,7 +367,7 @@ layers:
   - '2'
   - '3'
   - ','
-  - '&mkp MB5'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -378,7 +378,7 @@ layers:
   - '-'
   - _
   - '='
-  Func:
+  Fn:
   - HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -420,13 +420,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Adjust:
+  Adj:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -441,7 +441,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -462,17 +462,58 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Mse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: TAB
-- p: [10, 11]
-  k: LSHIFT
-  l: [Mac_Base, Win_Base, And_Base, Pad_Base]
-- p: [32, 31]
-  k: RIGHT ALT
+  l: [Mac, Win, And, Pad]
+- p: [16, 17]
+  k: LANG1
+  l: [Mac, Win, And, Pad]
+- p: [27, 28]
+  k: AltGr+SPACE
+  l: [Mac, Win, And, Pad]
 - p: [38, 39]
   k: AltGr+SPACE
-- p: [40, 39]
-  k: Sft+SPACE
-- p: [16, 18]
-  k: '&mkp MB3'
+  l: [Mac, Win, And, Pad]
