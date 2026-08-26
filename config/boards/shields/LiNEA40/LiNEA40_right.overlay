@@ -61,7 +61,9 @@
         /* v2.0: snipe-layers = <2> を削除。旧レイヤー構成の残骸で、
          * Win_Base(2)で常時スナイプ（カーソル半速）になっていた。
          * 注意: この修正でWindowsでのカーソルが従来より速くなる */
-        scroll-layers = <8>;
+        /* v2.1: スクロール層は9（SymNum）。このドライバは「最上位レイヤー」で
+         * スクロール判定するため、AML(8)はSymNum(9)より下の番号に配置してある */
+        scroll-layers = <9>;
     };
 };
 
@@ -71,6 +73,7 @@
     /* v2.0: AML（自動マウスレイヤー）。玉を動かすとレイヤー11(Mouse)が有効になり、
      * 最後の玉の動きまたはクリックから400msで解除（クリック延命はkeymap側の
      * mkp_input_listener設定と、excluded-positions等はkeymap側のzip_temp_layer
-     * 設定を参照。Aerogu34 v1.6と同方式） */
-    input-processors = <&zip_temp_layer 11 400>;
+     * 設定を参照。Aerogu34 v1.6と同方式）
+     * v2.1: Mouseレイヤーは8（スクロール判定の都合でSymNumより下に配置） */
+    input-processors = <&zip_temp_layer 8 400>;
 };

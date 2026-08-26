@@ -26,10 +26,12 @@
 #define AND_NAV  5
 #define PAD      6
 #define PAD_NAV  7
-#define SYM      8   // 記号＋テンキー（かなホールド。トラボはスクロール化=右overlayのscroll-layersと連動）
-#define FUN      9
-#define ADJ      10  // SYM+FUN同時押しで出現
-#define MSE      11  // 自動マウスレイヤー（AML）
+#define MSE      8   // 自動マウスレイヤー（AML）※必ずSYMより小さい番号にすること
+                     //   （PMW3610ドライバのスクロール判定は「最上位レイヤー」を見るため、
+                     //    AMLがSYMより上にあるとスクロール中にAMLが立った瞬間スクロールが解除される）
+#define SYM      9   // 記号＋テンキー（かなホールド。トラボはスクロール化=右overlayのscroll-layersと連動）
+#define FUN      10
+#define ADJ      11  // SYM+FUN同時押しで出現
 
 // ---- キー位置（hold-trigger用） ----
 //  0  1  2  3  4   |   5  6  7  8  9
@@ -304,7 +306,19 @@
             >;
         };
 
-        // ============ 8: 記号＋テンキー（従来と同一。MB5のみ廃止） ============
+        // ============ 8: Mouse（AML・玉を動かすと自動有効） ============
+        // 最小構成: I=中クリック・J=左クリック・L=右クリックのみ（Aerogu34と同一）
+        Mouse {
+            display-name = "Mse";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &trans    &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans
+            >;
+        };
+
+        // ============ 9: 記号＋テンキー（従来と同一。MB5のみ廃止） ============
         // ホールド中はトラボがスクロール（右overlayのscroll-layers=<8>と連動）
         SymNum {
             display-name = "Sym";
@@ -316,7 +330,7 @@
             >;
         };
 
-        // ============ 9: Func（従来と同一） ============
+        // ============ 10: Func（従来と同一） ============
         Func {
             display-name = "Fn";
             bindings = <
@@ -329,7 +343,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        // ============ 10: Adjust（SYM+FUN同時押し。studio_unlockをZ位置に追加） ============
+        // ============ 11: Adjust（SYM+FUN同時押し。studio_unlockをZ位置に追加） ============
         Adjust {
             display-name = "Adj";
             bindings = <
@@ -340,17 +354,6 @@
             >;
         };
 
-        // ============ 11: Mouse（AML・玉を動かすと自動有効） ============
-        // 最小構成: I=中クリック・J=左クリック・L=右クリックのみ（Aerogu34と同一）
-        Mouse {
-            display-name = "Mse";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &trans    &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
